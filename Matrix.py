@@ -7,19 +7,10 @@ def Randomz():
  Chars =   ['0','1','2','3','4','5','6','7','8','9','｡','｢','｣','､','･','ｦ','ｧ','ｨ','ｩ','ｪ','ｫ','ｬ','ｭ','ｮ','ｯ','ｰ','ｱ','ｲ','ｳ','ｴ','ｵ','ｶ','ｷ','ｸ','ｹ','ｺ','ｻ','ｼ','ｽ','ｾ','ｿ','ﾀ','ﾁ','ﾂ','ﾃ','ﾄ','ﾅ','ﾆ','ﾇ','ﾈ','ﾉ','ﾊ','ﾋ','ﾌ','ﾍ','ﾎ','ﾏ','ﾐ','ﾑ','ﾒ','ﾓ','ﾔ','ﾕ','ﾖ','ﾗ','ﾘ','ﾙ','ﾚ','ﾛ','ﾜ','ﾝﾞﾟ', ' ']
  i = (randint(0,len(Chars)-1))
  return i
-
 def Calcu():
  m = (randint(0,3))
  return m
-def Calcu1():
- m = (randint(0,3))
- return m
-def Calcu2():
- m = (randint(0,3))
- return m
-def Calcu3():
- m = (randint(0,3))
- return m
+
 def Color():
  j = (randint(0,100))
  if ( j <= 98):
@@ -29,34 +20,8 @@ def Color():
  elif (j == 100):
    j = 2 
  return j
-def Color1():
- j = (randint(0,100))
- if ( j <= 98):
-   j = 0
- elif (j == 99):
-   j = 1
- elif (j == 100):
-   j = 2 
- return j
-def Color2():
- j = (randint(0,100))
- if ( j <= 98):
-   j = 0
- elif (j == 99):
-   j = 1
- elif (j == 100):
-   j = 2 
- return j
-def Color3():
- j = (randint(0,100))
- if ( j <= 98):
-   j = 0
- elif (j == 99):
-   j = 1
- elif (j == 100):
-   j = 2 
- return j
-def Classe():
+
+def Function():
  intro = ["\033[1;32m","","\033[1;42m"]
  outro = "\033[1;m"
  Chars =   ['0','1','2','3','4','5','6','7','8','9','｡','｢','｣','､','･','ｦ','ｧ','ｨ','ｩ','ｪ','ｫ','ｬ','ｭ','ｮ','ｯ','ｰ','ｱ','ｲ','ｳ','ｴ','ｵ','ｶ','ｷ','ｸ','ｹ','ｺ','ｻ','ｼ','ｽ','ｾ','ｿ','ﾀ','ﾁ','ﾂ','ﾃ','ﾄ','ﾅ','ﾆ','ﾇ','ﾈ','ﾉ','ﾊ','ﾋ','ﾌ','ﾍ','ﾎ','ﾏ','ﾐ','ﾑ','ﾒ','ﾓ','ﾔ','ﾕ','ﾖ','ﾗ','ﾘ','ﾙ','ﾚ','ﾛ','ﾜ','ﾝﾞﾟ', ' ']
@@ -66,9 +31,9 @@ def Classe():
   A = int(Randomz())
   sleep(0.1)
   j = int(Color())
-  q = int(Color1())
-  w = int(Color2())
-  e = int(Color3())
+  q = int(Color())
+  w = int(Color())
+  e = int(Color())
   if (intro == ""):
    outro = ""
   Z = (intro[j] + Chars[A]  + outro + " ")
@@ -81,9 +46,9 @@ def Classe():
   M = int(Randomz())
   lista = [Z,X,V,N]
   m = int(Calcu())
-  n = int(Calcu1())
-  o = int(Calcu2())
-  p = int(Calcu3())
+  n = int(Calcu())
+  o = int(Calcu())
+  p = int(Calcu())
   NZ = lista[m] + lista[n] + lista[o] + lista[p]
   print NZ *10
   k = k+1
@@ -91,6 +56,5 @@ def Classe():
    k = 0
    l = l+1
 
-
-Classe()
+Function()
 
